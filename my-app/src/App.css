@@ -1,42 +1,56 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+
+
+body{
+  background: linear-gradient(
+  135deg,
+  #0B132B 0%,
+  #0B132B 45%,
+  #1C2541 80%
+);
+margin: 0px;
+min-height: 100hv;
+display:flex;
+flex-direction: column;
+align-items: stretch;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.header{
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  padding:24px 60px;
+  width: 1353.14px;
+  height:166.24px;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.logo img{
+  width: 194px;
+  height: 191px;
+  border-radius: 524.5px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.buttons{
+  display: flex;
+  gap: 30px;
+}
+.login-button{
+  width: 140.99px;
+  height:53.02px;
+  font-family: popins;
+  font-weight: 600;
+  background: transparent;
+  border: 2px solid #D4AF37;
+  color:#D4AF37;
+  border-radius: 12px;
 }
 
-.card {
-  padding: 2em;
+.Register-button{
+  width: 140.99px;
+  height:53.02px;
+  font-family: popins;
+  font-weight: 600;
+  border-radius: 12px;
+  background-color: #D4AF37;
+  color:FFFFFF;
 }
 
-.read-the-docs {
-  color: #888;
-}
