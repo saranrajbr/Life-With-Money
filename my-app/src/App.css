@@ -1,19 +1,4 @@
 
-
-body{
-  background: linear-gradient(
-  135deg,
-  #0B132B 0%,
-  #0B132B 45%,
-  #1C2541 80%
-);
-margin: 0px;
-min-height: 100hv;
-display:flex;
-flex-direction: column;
-align-items: stretch;
-}
-
 .header{
   display:flex;
   justify-content: space-between;
@@ -24,14 +9,19 @@ align-items: stretch;
 }
 
 .logo img{
-  width: 194px;
-  height: 191px;
-  border-radius: 524.5px;
+  width: 178px;
+  height: 175px;
+  border-radius: 50%;
 }
 
 .buttons{
   display: flex;
-  gap: 30px;
+  gap: 40px;
+  align-items: center;
+  justify-content: flex-end;
+  margin-top: -20px;
+  margin-left:20px;
+
 }
 .login-button{
   width: 140.99px;
@@ -51,6 +41,53 @@ align-items: stretch;
   font-weight: 600;
   border-radius: 12px;
   background-color: #D4AF37;
-  color:FFFFFF;
+  color:#FFFFFF;
 }
 
+.title{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.main-title{
+  color:#FFFFFF;
+  font-weight: 600;
+  font-size:64px;
+  letter-spacing:2px;
+  margin:0;
+}
+
+.sub-title{
+  color:#FFFFFF;
+  font-weight: 600;
+  font-size: 24px;
+  letter-spacing: 2px;
+}
+
+.content1 img{
+  height: 336px;
+  width:336px;
+  border-radius: 167px;
+  margin-right: 180px;
+}
+
+.content1{
+  display:flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap:100px;
+
+}
+
+.text1{
+  flex:1;
+  padding-left:180px;
+  font-size: 24px;
+
+}
+
+.text1 p{
+  padding-bottom: 20px;
+}
