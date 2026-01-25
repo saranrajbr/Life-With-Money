@@ -53,11 +53,12 @@ you save more, spend smarter, and stay financially confident.</p>
             </div>
             <footer>
                 <div className='contact'>
-                    <p>contact us</p>
-                    <img src={mail} alt="mail" />
-                    <img src={instagram} alt="instagram" />
-                    <img src={facebook} alt="facebook" />
-                    <img src={linkedin} alt="linkedin" />
+                    <p>contact</p>
+                    <a href="mailto:saranrajbr@gmail.com" target="_blank" rel="noopener noreferrer"><img src={mail} alt="mail" className="mail" /></a>
+                    <a href="https://www.instagram.com/saranrajbr?igsh=MWlyZGUxY3J6NHJldg==" target="_blank" rel="noopener noreferrer"><img src={instagram} alt="instagram" className="instagram"/></a>
+                    <a href="https://www.facebook.com/share/18HBNTqcH3/" target="_blank" rel="noopener noreferrer"><img src={facebook} alt="facebook" className="facebook"/></a>
+                    <a href="https://www.linkedin.com/in/saran-raj-b-r-04913932b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" rel="noopener noreferrer"><img src={linkedin} alt="linkedin" className="linkedin" /></a>
+                    
                 </div>
             </footer>
         </>
