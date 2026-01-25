@@ -1,27 +1,14 @@
-body{
-background-color:rgb(11, 19, 43);
-  margin: 0px;
-  color: #FFFFFF;
-  font-family:Poppins;
-
-}
 
 .header{
   display:flex;
   justify-content: space-between;
   align-items: center;
-  padding:24px 30px;
-  margin-top: 20px;
-  margin-bottom: 30px;
+  padding:24px 60px;
 }
 
 #root{
   display:flex;
   flex-direction: column;
-}
-
-.logo{
-  margin-right: 40px;
 }
 
 .logo img{
@@ -71,7 +58,7 @@ background-color:rgb(11, 19, 43);
 .main-title{
   color:#FFFFFF;
   font-weight: 600;
-  font-size:54px;
+  font-size:64px;
   letter-spacing:2px;
   margin:0;
 }
@@ -86,8 +73,8 @@ background-color:rgb(11, 19, 43);
 .content1 img{
   height: 336px;
   width:336px;
-  border-radius: 167px;
-  margin-right: 180px;
+  border-radius: 155px;
+  margin-right: 100px;
 }
 
 .content1{
@@ -100,11 +87,38 @@ background-color:rgb(11, 19, 43);
 
 .text1{
   flex:1;
-  padding-left:180px;
+  padding-left:100px;
   font-size: 24px;
-
+  word-spacing: 2px;
 }
 
 .text1 p{
   padding-bottom: 20px;
+}
+
+.content2{
+  display: flex;
+  align-items: center;
+  justify-content:space-between;
+  padding: 20px;
+  gap: 100px;
+}
+
+.pigimage img{
+  border-radius: 46px;
+  width: 304px;
+  height: 304px;
+  padding-left: 40px;
+}
+
+.text2{
+  font-size: 24px;
+  word-spacing: 2px;
+  padding-right: 40px;
+}
+
+.contact{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }

@@ -1,3 +1,12 @@
 body{
-    
+background: linear-gradient(
+    135deg,
+    #0B132B 0%,
+    #0B132B 45%,
+    #1C2541 80%
+  );
+  margin: 0px;
+  color: #FFFFFF;
+  font-family:Poppins;
+
 }
