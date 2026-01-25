@@ -7,7 +7,7 @@ import logo from '../assets/logo.png'
 import mail from '../assets/Group Message.png'
 import instagram from '../assets/Instagram Circle.png'
 import facebook from '../assets/Facebook.png'
-import linkedin from '../assets/linkedin Circled.png'
+import linkedin from '../assets/LinkedIn Circled.png'
 
 export default function Home(){
     return (
