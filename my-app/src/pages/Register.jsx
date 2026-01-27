@@ -35,7 +35,7 @@ export default function Register(){
                             <label>CONFIRM PASSWORD :</label>
                             <input type="password" placeholder='12345' />
                         </div>
-                        <button className='login-bttn'>LOGIN</button>
+                        <button className='login-bttn'>REGISTER</button>
                         </form>
                     </div>
                     <p className='or'>OR</p>
