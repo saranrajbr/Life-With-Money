@@ -1,6 +1,7 @@
 import React from "react";
 import {Routes,Route,Link } from "react-router-dom"
 import '../App.css'
+import '../index.css'
 import pigmoney from '../assets/pigmoney.png';
 import moneyhand from '../assets/moneyhand.png';
 import logo from '../assets/logo.png'
@@ -22,12 +23,8 @@ export default function Home(){
                     <h2 className='sub-title'>Track daily expenses. Build better financial habits.</h2>
                 </div>
                 <div className='buttons'>
-                    <button className='login-button'>
-                        login
-                    </button>
-                    <button className='Register-button'>
-                        Register
-                    </button>
+                    <Link to="/Login"><button className='login-button'>login</button></Link>
+                    <Link to="/Register"><button className='Register-button'>Register</button></Link>
                 </div>
             </div>
         </header>

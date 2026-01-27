@@ -27,18 +27,7 @@
 
 }
 
-.login-button{
-  width: 140.99px;
-  height:53.02px;
-  font-family: popins;
-  font-weight: 600;
-  background: transparent;
-  border: 2px solid #D4AF37;
-  color:#D4AF37;
-  border-radius: 12px;
-}
-
-.Register-button{
+.Register-button,.login-button{
   width: 140.99px;
   height:53.02px;
   font-family: popins;
@@ -127,4 +116,121 @@
 .contact a:hover img {
   transform: scale(1.2);
   filter: drop-shadow(0 0 8px rgba(255, 255, 255, 0.6));
+}
+
+.login-button:hover{
+  background-color: transparent;
+  color:#D4AF37;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.Register-button:hover{
+  background-color: transparent;
+  color:#D4AF37;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.loginbody{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 50px;
+}
+.card{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap:100px;
+  background: transparent;
+  border-radius: 61px;
+  width: 616px;
+  background-color: #232C4A;
+  filter: drop-shadow(0 0 4px #000000);
+  border: 1px solid #000000;
+  padding-bottom: 30px;
+}
+
+.or{
+  font-size: 36px;
+  font-weight: 600;
+}
+
+.googlecard{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 33px;
+  width: 616px;
+  height: 83px;
+  background: transparent;
+  background-color: #232C4A;
+  filter: drop-shadow(0 0 4px #000000);
+  border: 1px solid #000000;
+  font-size: 24px;
+  font-weight: 600;
+  word-spacing: 2px;
+  color: #FFFFFF;
+}
+
+.googlecard:hover{
+  transform: scale(1.05);
+  color: #D4AF37;
+}
+
+.card h2{
+  padding-top: 30px;
+}
+
+.inputbox{
+  display: flex;
+  flex-direction:row;
+  gap:10px;
+}
+
+.inputbox label{
+  color:white;
+  font-size: 24px;
+  letter-spacing: 2px;
+}
+
+.inputbox input{
+  background:transparent;
+  border: none;
+  border-bottom: 2px solid white;
+  outline: none;
+  color: white;
+  padding: 8px 5px;
+  font-size: 14px;
+  text-align: center;
+}
+
+.login-bttn{
+  background-color: #D4AF37;
+  width: 265px;
+  height: 64px;
+  border-radius: 32px;
+  color: #FFFFFF;
+  font-size: 24px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.login-bttn:hover{
+  transform: scale(1.05);
+  background:transparent;
+  color: #D4AF37;
+}
+
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 100px;
 }
