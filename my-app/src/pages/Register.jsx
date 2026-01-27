@@ -1,6 +1,10 @@
 import logo from '../assets/logo.png'
 import { Link } from 'react-router-dom'
 import '../App.css'
+import mail from '../assets/Group Message.png'
+import instagram from '../assets/Instagram Circle.png'
+import facebook from '../assets/Facebook.png'
+import linkedin from '../assets/LinkedIn Circled.png'
 export default function Register(){
     return (
         <>
@@ -41,6 +45,16 @@ export default function Register(){
                     <p className='or'>OR</p>
                     <button className='googlecard'>USING GOOGLE ACCOUNT</button>
                 </div>
+                <footer>
+                    <div className='contact'>
+                        <p>contact</p>
+                        <a href="mailto:saranrajbr@gmail.com" target="_blank" rel="noopener noreferrer"><img src={mail} alt="mail" className="mail" /></a>
+                        <a href="https://www.instagram.com/saranrajbr?igsh=MWlyZGUxY3J6NHJldg==" target="_blank" rel="noopener noreferrer"><img src={instagram} alt="instagram" className="instagram"/></a>
+                        <a href="https://www.facebook.com/share/18HBNTqcH3/" target="_blank" rel="noopener noreferrer"><img src={facebook} alt="facebook" className="facebook"/></a>
+                        <a href="https://www.linkedin.com/in/saran-raj-b-r-04913932b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" rel="noopener noreferrer"><img src={linkedin} alt="linkedin" className="linkedin" /></a>
+                                                
+                    </div>
+                </footer> 
             </>
     );
 }
