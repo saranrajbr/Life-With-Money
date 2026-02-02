@@ -35,7 +35,7 @@ export default function Login(){
                             <label>PASSWORD :</label>
                             <input type="password" placeholder='12345'/>
                         </div>
-                        <button className='login-bttn'>LOGIN</button>
+                        <Link to="/Dashboard"><button className='login-bttn'>LOGIN</button></Link>
                         </form>
                     </div>
                     <p className='or'>OR</p>
