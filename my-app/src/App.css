@@ -234,3 +234,112 @@ form {
   justify-content: space-between;
   gap: 100px;
 }
+
+
+
+.dashboard-container{
+  display: flex;
+  flex-direction: row;
+}
+
+
+.side-navigation{
+  width: 330px;
+  height: 100vh;
+  background-color: #303C60;
+  display: flex;
+  flex-direction: column;
+  gap:70px;
+}
+
+
+.side-heading{
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+}
+
+.side-heading img{
+  width: 58px;
+  height: 57px;
+  border-radius: 525px;
+  margin-top: 10px;
+  margin-left:5px;
+}
+
+
+.side-options{
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  margin-left: 30px;
+}
+
+.dashboard{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 600;
+  font-family:Poppins;
+  width: 250px;
+  margin-left: 30px;
+  border-radius: 15px;
+}
+
+.budgets{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-bottom: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  font-family:Poppins;
+  width: 250px;
+  margin-left: 30px;
+  border-radius: 15px;
+}
+
+.profiles{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap:10px;
+  padding-left: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  font-family:Poppins;
+  width: 250px;
+  margin-left: 30px;
+  border-radius: 15px;
+}
+
+
+.log-out{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  background-color: #D4AF37;
+  width: 280px;
+  margin-left: 30px;
+  border-radius: 15px;
+}
+
+
+.dashboard:hover{
+  background-color: #A5986F;
+}
+
+.budgets:hover{
+  background-color: #A5986F;
+}
+
+
+.profiles:hover{
+  background-color: #A5986F;
+}
+
+.log-out:hover{
+  filter: drop-shadow(0 0 8px rgba(255, 255, 255, 0.6));
+}
