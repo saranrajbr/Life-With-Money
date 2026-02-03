@@ -1,19 +1,62 @@
-import React from 'react';
+import React,{useState} from 'react';
 import FullCalendar from '@fullcalendar/react';
-import dayGridPlugin from '@fullcalendar/daygrid';
+import dayGridPlugin from '@fullcalendar/daygrid'
+import interactionPlugin from '@fullcalendar/interaction';
 import logo from '../assets/logo.png'
 import dashboard from '../assets/dashboard.png'
 import budgets from '../assets/budgets.png'
 import profile from '../assets/Profile.png'
 import arrow from '../assets/arrow.png'
+import { Link } from 'react-router-dom';
 
 
-const handleDateClick = (info) => {
-
-  };
 
 
 export default function Dashboard() {
+  const today=new Date().toISOString().split('T')[0];
+
+  const [selecteddate,setselecteddate]=useState(today);
+
+  const [expenses,setexpenses]=useState([
+    {name:'',amount:''},
+    {name:'',amount:''}
+  ]);
+
+  const handleDateClick = (info) => {
+    const date=info.dateStr;
+    setselecteddate(date);
+    if (allexpenses[date]){
+      setexpenses(allexpenses[date]);
+    }else{
+       setexpenses([
+        { name: '', amount: '' },
+        { name: '', amount: '' }
+       ]
+       );
+    }
+  };
+
+  const [allexpenses,setallexpenses]=useState({});
+
+  const saveexpenses = () => {
+    setallexpenses({
+      ...allexpenses,
+      [selecteddate]: expenses
+    });
+    alert('Expenses saved for ' + selecteddate);
+  };
+
+  const updateexpense=(index,feild,value)=>{
+    const update=[...expenses];
+    update[index][feild]=value;
+    setexpenses(update);
+  };
+
+const addexpense=()=>{
+  setexpenses([...expenses,{name:'',amount:''}]);
+};
+
+console.log(selecteddate)
   return (
     <div className="dashboard-container">
       <div className='side-navigation'>
@@ -35,9 +78,63 @@ export default function Dashboard() {
             <p>Profiles</p>
           </div>
         </div>
-        <div className='log-out'>
-          <p>Logout</p>
+        <Link to="/"><button className='log-out'>
+          Logout
           <img src={arrow} alt="arrow symbol" />
+        </button></Link>
+        
+      </div>
+      <div className='calender-container'>
+          <div className='calender-title'>
+            <h1>Financial Calendar</h1>
+            <h2>Track daily expenses</h2>
+          </div>
+          <div className='calender'>
+            <FullCalendar
+                plugins={[dayGridPlugin,interactionPlugin]}
+                initialView="dayGridMonth"
+                dateClick={handleDateClick}
+                dayCellClassNames={(arg) => arg.dateStr === selecteddate ? ['selected-day'] : []}
+            />
+            
+          </div>
+          <div className='calender-descrition'>
+            <p>Track Your Money. Control Your Life.</p>
+          </div>
+      </div>
+      <div className='log-savings'>
+        <div className='log-title'>
+          <h1>Expense Entry</h1>
+          <p>Date: <strong>{selecteddate}</strong></p>
+        </div>
+        <div className='log-entry'>
+          {expenses.map((item, index) => (
+          <div key={index}>
+            <input
+              type="text"
+              placeholder="Category name"
+              value={item.name}
+              onChange={(e) =>
+                updateexpense(index, 'name', e.target.value)
+              }
+              className='category'
+            />
+
+            <input
+              type="number"
+              placeholder="Amount"
+              value={item.amount}
+              onChange={(e) =>
+                updateexpense(index, 'amount', e.target.value)
+              }
+              className='amount'
+            />
+          </div>
+        ))}
+        </div>
+        <div className='save-add-button'>
+        <button onClick={addexpense}>+ Add Category</button>
+        <button onClick={saveexpenses}>Save Expenses</button>
         </div>
       </div>
     </div>
