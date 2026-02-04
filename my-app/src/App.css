@@ -455,7 +455,7 @@ form {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap:50px;
+  gap:30px;
 }
 
 
@@ -504,4 +504,19 @@ form {
 .save-add-button button:hover{
   filter: drop-shadow(0 0 8px rgba(255, 255, 255, 0.6));
 
+}
+
+
+
+.save-btn button{
+  border-radius: 5px;
+  height: 30px ;
+  background-color: #D4AF37;
+  color: #FFFFFF;
+  font-size:16px;
+}
+
+
+.save-btn:hover{
+  filter: drop-shadow(0 0 8px rgba(255, 255, 255, 0.6));
 }
