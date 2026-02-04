@@ -56,7 +56,15 @@ const addexpense=()=>{
   setexpenses([...expenses,{name:'',amount:''}]);
 };
 
-console.log(selecteddate)
+const totalamount=expenses.reduce((sum,item)=>{
+  const amount=parseFloat(item.amount);
+  return sum+(isNaN(amount)?0:amount);
+},0);
+
+const removeexpense =()=>{
+  if(expenses.length<=1) return;
+  setexpenses(expenses.slice(0,-1));
+}
   return (
     <div className="dashboard-container">
       <div className='side-navigation'>
@@ -132,9 +140,15 @@ console.log(selecteddate)
           </div>
         ))}
         </div>
+        <div>
+          <h3>Total :<b> {totalamount}</b></h3>
+        </div>
         <div className='save-add-button'>
         <button onClick={addexpense}>+ Add Category</button>
-        <button onClick={saveexpenses}>Save Expenses</button>
+        <button onClick={removeexpense}>- Remove Category</button>
+        </div>
+        <div className='save-btn'>
+          <button onClick={saveexpenses}>Save Expenses</button>
         </div>
       </div>
     </div>
