@@ -15,6 +15,7 @@ router.post("/",auth,async(req,res)=>{
 });
 
 
+
 router.get("/:date",auth,async(req,res)=>{
     const data=await Expense.findOne({
         userId:req.user.id,
