@@ -383,8 +383,8 @@ form {
   font-size: 12px;
   height: 400px;
   width: 400px;
-  background-color: white;
-  color: black;
+  background-color: #303C60;
+  color: white;
 }
 
 
@@ -393,7 +393,7 @@ form {
   padding: 8px;
   text-align: center;
   border: 1px solid black;
-  color: black;
+  color: white;
   font-size: 9px;
 }
 
@@ -403,7 +403,7 @@ form {
   padding: 5px;
   border: 1px solid black;
   vertical-align: top;
-  color: black;
+  color: white;
 }
 
 
@@ -427,7 +427,7 @@ form {
 
 
 .fc-daygrid-day:hover {
-  background-color: #e3f2fd;
+  background-color: #81abc9;
 }
 
 .selected-day {
