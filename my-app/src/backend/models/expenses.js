@@ -11,5 +11,3 @@ const Expenseschema=mongoose.Schema({
 
 export default mongoose.model("Expense",Expenseschema);
 
-
-//comment the fun things
